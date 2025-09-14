@@ -2,10 +2,10 @@ name: Update Java release data
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 */8 * * *'
+    - cron: '36 */8 * * *'
 jobs:
   update:
-    if: github.repository == 'halcyon/asdf-java'
+    #if: github.repository == 'halcyon/asdf-java'
     runs-on: 'ubuntu-latest'
     steps:
     - uses: actions/checkout@v2
